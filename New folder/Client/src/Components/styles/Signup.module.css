@@ -1,0 +1,125 @@
+
+.form-container {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  border: 2px solid #53858a;
+}
+.input-container {
+  position: relative;
+}
+.input-header {
+  position: absolute;
+  background-color: #fff;
+  font-size: 10px;
+  top: -8px;
+  left: 8px;
+  border-radius: 4px;
+}
+.input-field {
+  margin-bottom: 28px;
+  padding: 8px;
+  width: 250px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  min-width:100%;
+}
+.err-msg {
+  font-size: 8px;
+  font-style: italic;
+  color: #3e3e3e;
+  position: absolute;
+  top: 38px;
+  z-index: 3;
+}
+.sub-btn {
+  color: #609196;
+  border: 1px solid #609196;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  transition: 250ms;
+}
+
+.sub-btn:hover {
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.45);
+  background-color: #f0f6f8;
+  color: #53858a;
+  border: 1px solid #53858a;
+}
+
+.sub-btn:active {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+  background-color: #53858a;
+  color: #fff;
+}
+.form-header{
+    font-size: 14px;
+}
+.login-img-cont{
+  position: relative;
+  border-right:2px solid #53858a;
+  margin-right: 10px;
+  padding-right: 16px;
+}
+.login-img{
+  width: 200px;
+  height: 200px;
+}
+.signup-img{
+  width: 300px;
+  height: 300px;
+}
+.login-img-attr{
+  position: absolute;
+  bottom: 25px;
+  left: 35px;
+  font-size: 8px;
+  color: #cecece;
+}
+.conversion-text-spec{
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 6px;
+}
+.conversion-text{
+  letter-spacing: 0.25px;
+  padding-top: 6px;
+  font-size: 12px;
+}
+
+.close-btn{
+  border: 1px solid #ee575d;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #ee575d;
+  transition: 250ms;
+  cursor: pointer;
+  position: absolute;
+  bottom:10px;
+  right: 214px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.close-btn:hover{
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.45);
+background-color: #f0f6f8;
+}
+.close-btn:active{
+  color: #fff;
+  background-color:#eb402c;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
+}

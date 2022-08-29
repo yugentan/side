@@ -1,0 +1,34 @@
+.footer-container{
+    height: 10vh;
+}
+.footer-top{
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+    border-bottom: 1px solid #cecece;
+    align-items: center;
+}
+.footer-top-left-bottom{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-left-bottom a {
+    color: #000;
+}
+.footer-email{
+    color: #000;
+    text-decoration: underline;
+}
+.footer-top-left-bottom svg{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.footer-top-item{
+    font-weight: 300;
+}
+.footer-top-item-1{
+    font-weight: 300;
+    cursor: pointer;
+}

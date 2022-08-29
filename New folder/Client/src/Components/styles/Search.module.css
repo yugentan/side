@@ -1,0 +1,107 @@
+.searchParent{
+    width: 100%;
+    padding: 20px 100px;
+    position: relative;
+}
+
+.searchCont{
+    border: 1px solid #228b22;
+    border-radius: 45px;
+    padding: 10px 25px 10px 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.searchInput{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.searchButton{
+    cursor:pointer;
+    color: #b1d8b1; 
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #b1d8b1; 
+    padding: 5px 10px;
+    transition: 250ms;
+}
+.searchButton:hover{
+    color: #228b22;
+    border: 2px solid #228b22;
+}
+.searchButton:active{
+    background-color: #228b22;
+    color: #fff;
+}
+.location-btn{
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 8px;
+    position: relative;
+
+}
+.location-pop{
+    border: 1px solid #228b22;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    top: 90px;
+    padding: 20px 8px;    
+}
+.location-items{
+    cursor: pointer;
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+    min-width: 120px;
+    color: #228b22;
+    border: 1px solid #228b22;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    transition: 250ms;
+}
+.location-items:hover{
+    background-color: #c7f5c7;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+}
+.location-items:active{
+    background-color: #228b22;
+    color: #fff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+}
+.location-header{
+    text-decoration: underline;
+    padding: 0px 25px;
+}
+.location-close{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 8px;
+    border:2px solid #ee575d;
+    transition: 250ms;
+    padding: 4px 8px;
+    color: #ee575d;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+.location-close:hover{
+    background-color: #f0f6f8;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+}
+.location-close:active{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+    background-color: #ee575d;
+    color: #fff;
+
+}
+@media screen and (min-width:1281px) {
+    .location-btn{
+ 
+        grid-template-columns: repeat(11,1fr);
+        grid-gap: 17px;
+    
+    }
+}

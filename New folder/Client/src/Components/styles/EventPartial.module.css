@@ -1,0 +1,117 @@
+.e-container{
+    padding: 10px 100px;
+    border-bottom: 1px solid #cecece;
+}
+@media screen and (min-width:1281px) {
+    .e-container{
+        padding: 10px 300px;
+    }
+}
+.event-cont{
+    display: flex;
+    border: 1px solid #ee575d;
+    padding:10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+    margin-bottom: 18px;
+    max-width: 700px;
+}
+.event-left{
+    padding-right: 4px;
+    margin-right: 4px;
+    border-right: 2px solid #228b22;
+    width: 300px;
+    height: 180px;
+}
+.event-right{
+    text-align: left;
+    position: relative;
+}
+.event-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.event-name{
+    font-size: 20px;
+}
+.event-desc{
+    font-size: 14px;
+    max-height: 300px;
+}
+.event-organiser{
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 400;
+}
+.event-date-cont{
+    display: flex;
+    align-items: baseline;
+    font-size: 8px;
+}
+.event-date{
+    background-color: #228b22;
+    color: #fff;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+    padding: 2px 8px;
+    border-radius: 25px;
+    margin-right: 4px;
+}
+.cimg-c{
+    width: 300px;
+    height: 180px;
+}
+.event-desc{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 11px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+}
+.event-btn{
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+    transition: 250ms;
+    background-color: #fff;
+    border: 2px solid #ee575d;
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 10px;
+    border-radius: 4px;
+    color: #ee575d;
+}
+.event-btn:hover{
+    background-color: #f5d2d3;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+}
+.event-btn:active{
+    background-color: #ee575d;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+    color: #fff;
+}
+
+.back-btn{
+    cursor: pointer;
+    transition: 250ms;
+    background-color: #fff;
+    border: 2px solid #ee575d;
+    text-align: right;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 10px;
+    border-radius: 4px;
+    color: #ee575d;
+    margin-bottom: 10px;
+}
+.back-btn:hover{
+    background-color: #f5d2d3;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+}
+.back-btn:active{
+    background-color: #ee575d;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+    color: #fff;
+}
