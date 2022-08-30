@@ -11,17 +11,19 @@ import axios from "axios";
 const EventPartial = ({ detail, setShowCard, setCardSelected }) => {
   const handleBookPop = (id) => {
     axios
-      .post("http://localhost:7000/auth/auth", {
-        tkn: sessionStorage.getItem("JWT"),
+      .post("http://localhost:7000/event/searchById", {
+        id:id,
       })
       .then((res) => {
         if (res.data.success) {
-          setShowCard(true);
-          setCardSelected(id);
+          setShowCard(true)
+          setCardSelected(res.data.data);
+        } else {
+          alert("No Location Found! \nRedirecting...");
         }
       })
       .catch((err) => {
-        alert("You have not Login yet \nLogin first to initiate booking");
+        console.log(err);
       });
   };
 

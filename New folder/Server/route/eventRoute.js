@@ -8,6 +8,8 @@ const {
   getAllEvent,
   getAllEventLocation,
   searchByLocation,
+
+  searchById,
 } = require("../controller/eventController");
 
 // [POST]
@@ -18,5 +20,5 @@ router.route("/event/searchByLocation").post(searchByLocation);
 //[GET]
 router.route("/event/getAllEvent").get(getAllEvent);
 router.route("/event/getAllLocation").get(getAllEventLocation);
-
+router.route("/event/searchById").post(searchById)
 module.exports = router;

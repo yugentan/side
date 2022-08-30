@@ -42,6 +42,7 @@ const Event = ({ list }) => {
   const [cardSelected, setCardSelected] = useState();
   return (
     <div className={styles["e-container"]}>
+       {showCard ? <BookingCard data={cardSelected} setShowCard={setShowCard}/> : <></>}
       <button onClick={handleBack} className={styles["back-btn"]}>
         Back
       </button>
@@ -53,8 +54,10 @@ const Event = ({ list }) => {
             setCardSelected={setCardSelected}
           />
         </div>
+        
       ))}
-      {showCard ? <BookingCard id={cardSelected} /> : <></>}
+      
+     
     </div>
   );
 };

@@ -6,8 +6,22 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./Config/config.env" });
 
 //[POST]
-exports.create = (req, res) => {};
-exports.book = (req, res) => {};
+exports.create = (req,res)=>{
+
+};
+exports.book =async(req, res) => {
+  const user = await jwt.decode(req.body.token, process.env.JWTID).username;
+  const bookedEvent = req.body.bookedEvent;
+  const email = req.body.email;
+  const pax = req.body.pax;
+  const sql1 = `SELECT attending FROM accounts WHERE username = "${user}";`
+  const re1 = await mysql.altread(sql1)
+  console.log(1,re1[0].attending)
+  let up1 = `${re1[0].toString()} , {"event_id":"${bookedEvent}", "pax":"${pax}", "email":"${email}"}`
+  console.log(2,up1)
+  // let sql2 = `UPDATE accounts SET attending = ${up1} WHERE username = "${user}"`
+  // await mysql.update(sql2); 
+}
 exports.eventInfo = (req, res) => {};
 
 //[GET]
@@ -71,3 +85,25 @@ exports.searchByLocation = (req, res) => {
       res.status(500).send("Internal Server Error");
     });
 };
+exports.searchById = (req,res)=>{
+  let response = new responseTask();
+  const id = req.body.id;
+  const sql = `SELECT * FROM event where (event_id = "${id}")`;
+  mysql
+    .altread(sql)
+    .then((resolve) => {
+      if(resolve){
+        response.success = true;
+        response.data = resolve;
+        res.status(200).send(response);
+      }else{
+        response.success = false;
+        response.message = "No Location Found"
+        res.status(200).send(response)
+
+      }
+    })
+    .catch((reject) => {
+      res.status(500).send("Internal Server Error");
+    });
+}
